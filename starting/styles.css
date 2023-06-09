@@ -1,0 +1,52 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    background-color: lightsalmon;
+}
+
+nav {
+    background-color: teal ;
+    display: flex;
+    justify-content: left;
+    align-items:flex-end;
+    min-height: 3.5rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 2rem;
+    padding: .5rem;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 2rem;
+}
+
+nav ul li a {
+    font-family: Abel;
+    color: lightsalmon;
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+
+.tittle {
+    min-height: 32.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tittle h1 {
+    background-color: rgba(0, 0, 0, .5);
+    color: coral;
+    font-size: 2.5rem;
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+}
