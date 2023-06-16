@@ -5,6 +5,7 @@ html {
 body {
     margin: 0;
     background-color: lightsalmon;
+    font-family: Montserrat, sans-serif;
 }
 
 nav {
@@ -12,7 +13,7 @@ nav {
     display: flex;
     justify-content: left;
     align-items:flex-end;
-    min-height: 3.5rem;
+    min-height: 3.3rem;
 }
 
 nav ul {
@@ -35,8 +36,25 @@ nav ul li a {
     text-decoration: none;
 }
 
+@media only screen and (max-width: 765px) {
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+    nav ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-decoration: underline;
+    }
+
+    nav ul li {
+        margin: .5rem 0;
+    }
+}
+
 .tittle {
-    min-height: 32.5rem;
+    min-height: 31.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,8 +63,201 @@ nav ul li a {
 .tittle h1 {
     background-color: rgba(0, 0, 0, .5);
     color: coral;
-    font-size: 2.5rem;
-    padding: 1rem;
+    font-size: 2rem;
+    padding: 2rem;
     text-align: center;
     width: 100%;
+}
+        /* meet up */
+.meet {
+    margin: 10px;
+}
+
+.meet h3 {
+    color:yellow;
+    font-size: 1.7rem;
+    padding: .3rem;
+}
+
+.meet p {
+    color: white;
+    font-size: 1.2rem;
+    padding: .3rem;
+}
+
+.meet .galery1 {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 6rem 1rem;
+}
+
+.meet img {
+    width: 30%;
+}
+
+@media only screen and (max-width: 800px) {
+    .meet {
+        margin: 0px;
+    }
+
+    .meet h3 {
+        font-size: 1.5rem;
+        margin-left: 10px;
+    }
+
+    .meet p {
+        font-size: 1rem;
+        margin-left: 10px;
+    }
+
+    .meet .galery1 {
+        margin: 0;
+    }
+
+    .meet img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+        /* testimonials */
+.post {
+    background-color: teal;
+    color: yellow;
+    padding: 3rem;
+    margin: 5rem 0;
+}
+
+.post h2 {
+    font-size: 2.5em;
+    margin: 1rem 0;
+    margin-block-start: .67em;
+    margin-block-end: .67em;
+    display: block;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+}
+
+        /* champions */
+
+.slider {
+    margin: 10px;
+}
+
+.slider .galery2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 6rem 1rem;
+}
+
+.slider img {
+    width:30%;
+}
+
+@media only screen and (max-width: 800px) {
+    .slider {
+        margin: 0px;
+    }
+
+    .slider .galery2 {
+        margin: 0;
+    }
+
+    .slider img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+        /* join us */
+
+.join {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem 1rem;
+}
+
+.join h3 {
+    color: yellow;
+    font-size: 2.5rem;
+}
+
+.join img {
+    width:50%;
+}
+
+.join p {
+    color:yellow;
+    font-size: 2rem;
+
+}
+
+@media only screen and (max-width: 800px) {
+    .join {
+        margin: 0px;
+    }
+
+    .join h3 {
+        margin-left: 10px;
+    }
+
+    .join p {
+        margin-left: 10px;
+        text-align: center;
+    }
+}
+
+footer {
+    background-color: teal;
+    margin: 0;
+    display: flex;
+    justify-content: left;
+    align-items:flex-end;
+    min-height: 3.5rem;
+}
+
+footer ul {
+    list-style: none;
+    flex-wrap:  wrap;
+    display: flex;
+    margin: 0 2rem;
+}
+
+footer ul li {
+    margin: 0 2rem;
+    font-style: normal;
+}
+
+footer ul li a {
+    font-family: Abel;
+    color: lightsalmon;
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 765px) {
+    footer {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+
+    footer ul {
+        flex-direction: column;
+        align-items: center;
+        text-decoration: underline;
+        margin: 0;
+        padding: 0;
+    }
+
+    footer ul li {
+        margin: .5rem 0;
+    }
 }
